@@ -1,0 +1,105 @@
+/* Container geral */
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 10px;
+}
+
+/* Estilos para a barra de busca */
+.search-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    margin-top: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* Largura total para dispositivos menores */
+    max-width: 300px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ffcb05;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Pokedex */
+.pokedex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+/* Lista de Pokémon */
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pokemon-card {
+    margin: 1rem;
+}
+
+/* Detalhes do Pokémon */
+.pokemon-details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Estilos responsivos para diferentes larguras de tela */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha os elementos em telas menores */
+        align-items: center;
+    }
+
+    .pokedex {
+        width: 100%; /* Ocupar 100% da largura em dispositivos menores */
+    }
+
+    .pokemon-details {
+        width: 100%;
+    }
+
+    .pokemon-list {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar input, 
+    .search-bar button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .pokemon-list {
+        flex-direction: column; /* Exibir os elementos em uma coluna em dispositivos bem pequenos */
+        align-items: center;
+    }
+
+    .pokemon-details {
+        align-items: center;
+    }
+}

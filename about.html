@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="assets/css/poke.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Seção de Pesquisa -->
+        <div class="search-section">
+            <h1>Qual Pokemon você está procurando? </h1>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Procure por Pokémon, Espécie, Habilidade, etc">
+                <button id="search-btn">Procure</button>
+            </div>
+        </div>
+
+        <!-- Seção de Lista de Pokémon -->
+        <div class="pokedex">
+            <div class="pokemons" id="pokemon-list">
+                <!-- Os cards dos Pokémon serão adicionados aqui -->
+            </div>
+        </div>
+
+        <!-- Seção de Detalhes do Pokémon -->
+        <div class="pokemon-details" id="pokemon-details">
+            <h2 id="pokemon-name"></h2>
+            <img id="pokemon-image" alt="Pokemon Image">
+            <div class="pokemon-info">
+                <p id="pokemon-species"></p>
+                <p id="pokemon-height"></p>
+                <p id="pokemon-weight"></p>
+                <p id="pokemon-abilities"></p>
+                <p id="pokemon-gender"></p>
+                <p id="pokemon-egg-groups"></p>
+                <p id="pokemon-egg-cycles"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/poke.js"></script>
+</body>
+</html>
